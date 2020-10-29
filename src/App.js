@@ -9,12 +9,10 @@ const Task = ({data: dataI, handleClick}) => (
         <div> Name of task: {dataI.name}</div>
         <div>Description: {dataI.description}</div>
         <button onClick={() => {
-            dataI.isCompleted = !dataI.isCompleted;
-            handleClick();
-            console.log("Task %i completed status = %s", dataI.id, dataI.isCompleted);
+            handleClick(dataI)
         }
         }>
-            {dataI.isCompleted ? "Completed" : "Uncompleted"}
+            {"Complete"}
         </button>
     </div>
 )
@@ -30,10 +28,9 @@ class App extends React.Component {
             {id: 7, name: "HW7", description: "asd asd asd", isCompleted: true},]
     }
 
-    handleClick = () => {
-        this.setState(currentState => ({
-            data: currentState.data
-        }))
+    handleClick = dataI => {
+        dataI.isCompleted = !dataI.isCompleted;
+        console.log("Task %i completed status = %s", dataI.id, dataI.isCompleted);
     }
 
     render() {
@@ -47,3 +44,4 @@ class App extends React.Component {
 
 
 export default App;
+
