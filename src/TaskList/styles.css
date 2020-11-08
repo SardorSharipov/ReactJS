@@ -1,0 +1,17 @@
+.taskList{
+    background: white;
+}
+
+.h1 {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.h2{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.tasks {
+    float: left;
+}

@@ -1,0 +1,27 @@
+button {
+    background: silver;
+    margin: 5px;
+    height: 30px;
+    width: 135px;
+    font-size: 20px;
+    text-align: center;
+    border: solid 2px black;
+    position: absolute;
+    bottom: 5px
+}
+
+.info{
+    margin: 5px;
+    background: #ccc;
+    word-wrap: break-word;
+}
+.data {
+    margin: 5px;
+    width: 200px;
+    height: 170px;
+    background: #ccc;
+    padding: 5px 10px 10px 5px;
+    border: solid 2px black;
+    float: left;
+    position: relative;
+}
