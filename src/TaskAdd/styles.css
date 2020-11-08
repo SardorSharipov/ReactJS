@@ -1,0 +1,26 @@
+div{
+    margin: 5px;
+    background: white;
+}
+.idDiv{
+    background: #ccc;
+}
+input{
+    width: 165px;
+    height: 20px;
+    margin-top: 10px;
+}
+.addDiv {
+    margin: 5px;
+    width: 170px;
+    height: 100px;
+    background: #ccc;
+    padding: 5px 10px 10px 5px;
+    border: solid 2px black;
+    position: relative;
+
+}
+
+.addBtn{
+    position: relative;
+}
